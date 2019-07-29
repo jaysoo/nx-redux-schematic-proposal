@@ -1,0 +1,24 @@
+{
+  "npmScope": "demo",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "demo": {
+      "tags": []
+    },
+    "demo-e2e": {
+      "tags": []
+    },
+    "products-feature": {
+      "tags": []
+    },
+    "shared-ui": {
+      "tags": []
+    }
+  }
+}

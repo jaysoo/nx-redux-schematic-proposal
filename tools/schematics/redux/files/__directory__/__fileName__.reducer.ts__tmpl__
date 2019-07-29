@@ -1,0 +1,36 @@
+import { createReducer } from 'redux-starter-kit';
+import * as actions from './<%= fileName %>.actions';
+import { <%= className %>Entity } from './<%= fileName %>.models';
+
+export const <%= constantName %>_FEATURE_KEY = '<%= propertyName %>';
+
+export interface <%= className %>State {
+  entities: <%= className %>Entity[];
+  loaded: boolean;
+  error: any;
+}
+
+export const initial<%= className %>State: <%= className %>State = {
+  entities: [],
+  loaded: false,
+  error: null
+};
+
+export const <%= propertyName %>Reducer = createReducer(initial<%= className %>State, {
+  [actions.load<%= className %>.type]: state => {
+    state.loaded = false;
+  },
+  [actions.load<%= className %>Success.type]: (
+    state,
+    action: actions.load<%= className %>Success
+  ) => {
+    state.loaded = true;
+    state.entities = action.payload;
+  },
+  [actions.load<%= className %>Failure.type]: (
+    state,
+    action: actions.load<%= className %>Failure
+  ) => {
+    state.error = action.payload;
+  }
+});

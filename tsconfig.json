@@ -17,7 +17,8 @@
     "baseUrl": ".",
     "paths": {
       "@demo/products/feature": ["libs/products/feature/src/index.ts"],
-      "@demo/shared/ui": ["libs/shared/ui/src/index.ts"]
+      "@demo/shared/ui": ["libs/shared/ui/src/index.ts"],
+      "@demo/products/api": ["libs/products/api/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

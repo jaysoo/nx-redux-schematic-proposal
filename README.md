@@ -60,8 +60,8 @@ The products feature component and slice are created as a lib inside the [`libs/
 ## TODOs
 
 - [ ] Modify `main.tsx` and `app.tsx` to configure Redux store with the new slice.
-- [ ] Generate default spec files for reducer and selectors.
-- [ ] Maybe add an effects library? (See [design](./DESIGN.md#effects))
+- [ ] Generate default spec file for reducer and selectors.
+- [ ] Maybe add an effects library other than redux-thunk? (See [design](./DESIGN.md#effects))
 
 ## Design Considerations
 

@@ -19,6 +19,9 @@
     },
     "shared-ui": {
       "tags": []
+    },
+    "products-api": {
+      "tags": []
     }
   }
 }

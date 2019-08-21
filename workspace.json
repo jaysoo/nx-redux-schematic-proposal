@@ -188,14 +188,17 @@
     "defaultCollection": "@nrwl/react"
   },
   "schematics": {
-    "@nrwl/react:component": {
-      "style": "styled-components"
-    },
-    "@nrwl/react:library": {
-      "style": "styled-components"
-    },
-    "@nrwl/react:application": {
-      "babel": true
+    "@nrwl/react": {
+      "application": {
+        "babel": true,
+        "style": "styled-components"
+      },
+      "component": {
+        "style": "styled-components"
+      },
+      "library": {
+        "style": "styled-components"
+      }
     }
   },
   "defaultProject": "demo"

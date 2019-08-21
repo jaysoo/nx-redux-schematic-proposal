@@ -7,7 +7,7 @@ import {
   selectProductsEntities,
   selectProductsLoaded,
   fetchProducts
-} from '../+state/products.slice';
+} from './products.slice';
 
 export const ProductsFeature = () => {
   const products = useSelector(selectProductsEntities);

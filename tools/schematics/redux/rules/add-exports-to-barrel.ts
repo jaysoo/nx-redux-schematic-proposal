@@ -22,28 +22,15 @@ export function addExportsToBarrel(options: NormalizedSchema): Rule {
         true
       );
 
-      const statePath = `./lib/${options.directory}/${options.fileName}`;
+      const statePath = options.directory
+        ? `./lib/${options.directory}/${options.fileName}`
+        : `./lib/${options.fileName}`;
 
       insert(host, indexFilePath, [
         ...addGlobal(
           indexSourceFile,
           indexFilePath,
-          `export * from '${statePath}.actions';`
-        ),
-        ...addGlobal(
-          indexSourceFile,
-          indexFilePath,
-          `export * from '${statePath}.models';`
-        ),
-        ...addGlobal(
-          indexSourceFile,
-          indexFilePath,
-          `export * from '${statePath}.reducer';`
-        ),
-        ...addGlobal(
-          indexSourceFile,
-          indexFilePath,
-          `export * from '${statePath}.selectors';`
+          `export * from '${statePath}.slice';`
         )
       ]);
     }

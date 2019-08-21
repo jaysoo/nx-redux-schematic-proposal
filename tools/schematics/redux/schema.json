@@ -21,7 +21,7 @@
     },
     "directory": {
       "type": "string",
-      "default": "+state",
+      "default": "",
       "description": "The name of the folder used to contain/group the generated Redux files."
     }
   },
